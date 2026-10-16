@@ -1,0 +1,8 @@
+{
+  "name": "pwa-nativo",
+  "version": "1.0.0",
+  "description": "Cria, converte, audita, otimiza e refatora PWAs com cara de app nativo no celular e de app de verdade no desktop: manifesto, service worker, instalação por plataforma, notificações inteligentes e casca mobile-native.",
+  "author": { "name": "Leonardo Candiani" },
+  "license": "MIT",
+  "keywords": ["pwa", "service-worker", "web-push", "mobile", "manifest", "offline"]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "pwa-nativo",
+  "owner": { "name": "Leonardo Candiani" },
+  "plugins": [
+    {
+      "name": "pwa-nativo",
+      "source": "./",
+      "description": "PWA nativo no celular e no desktop: criar, converter, auditar, notificar e otimizar."
+    }
+  ]
+}

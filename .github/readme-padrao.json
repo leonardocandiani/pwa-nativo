@@ -1,0 +1,33 @@
+{
+  "name": "pwa-nativo",
+  "desc": "Plugin do Claude Code para PWA com cara de app nativo no celular e no desktop",
+  "lang": "pt",
+  "palette": "candiani",
+  "author": "candiani",
+  "license": "MIT",
+  "typing": [
+    "PWA com cara de app nativo no celular e no desktop",
+    "Cria, converte, audita, notifica e otimiza",
+    "Auditor de 32 regras com arquivo e linha, sem rede",
+    "Next.js, Vite, React, Supabase e Web Push"
+  ],
+  "tagline": "Do site ao app instalável, com notificação que chega e layout de app nas duas telas.",
+  "badges": [
+    "license",
+    "claude",
+    { "label": "node", "msg": "18+ sem dependência", "logo": "nodedotjs" },
+    { "label": "regras", "msg": "32", "color": "ACCENT" }
+  ],
+  "pitch": "**pwa-nativo** junta num plugin o que fez o precodiesel.com.br virar app: manifesto e ícones certos, service worker que abre sem internet, instalação por plataforma, notificação testada na hora e casca com dock no celular e painel lateral no desktop.",
+  "notice": "Sem vínculo com a Anthropic. \"Claude\" e \"Claude Code\" são marcas da Anthropic.",
+  "what": {
+    "produto": "plugin do Claude Code: criar, converter, auditar, notificar e otimizar PWA",
+    "camadas": "manifesto · service worker · instalação · notificações · casca nativa · dados · verificação",
+    "auditor": "32 regras, saída TOON, cache por arquivo com sha1, nunca executa código auditado",
+    "modelos": "17 arquivos: sw.js, núcleo do navegador, React, Next, Vite, CSS, Supabase, geradores",
+    "notificações": "VAPID sem dependência, teste ao ligar, disparador que só avisa o que mudou",
+    "desktop": "painel lateral a partir de 768 px, screenshots wide, window-controls-overlay",
+    "instalar": "gh repo clone leonardocandiani/pwa-nativo · ./install.sh",
+    "licença": "MIT"
+  }
+}
