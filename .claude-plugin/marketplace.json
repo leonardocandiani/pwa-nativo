@@ -5,7 +5,7 @@
     {
       "name": "pwa-nativo",
       "source": "./",
-      "description": "PWA nativo no celular e no desktop: criar, converter, auditar, notificar e otimizar."
+      "description": "PWAs that feel native on phones and desktops: create, convert, audit, notify and optimize."
     }
   ]
 }

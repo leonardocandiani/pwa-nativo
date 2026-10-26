@@ -1,151 +1,154 @@
 <!-- readme-padrao:header -->
 <!-- Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:00d9ff&height=200&section=header&text=pwa-nativo&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Plugin%20do%20Claude%20Code%20para%20PWA%20com%20cara%20de%20app%20nativo%20no%20celular%20e%20no%20desktop&descAlignY=58&descSize=16" alt="pwa-nativo" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:00d9ff&height=200&section=header&text=pwa-nativo&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Claude%20Code%20plugin%20for%20PWAs%20that%20feel%20native%20on%20phones%20and%20desktops&descAlignY=58&descSize=16" alt="pwa-nativo" width="100%" />
 </div>
 
 <!-- Typing -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=2800&pause=900&color=00d9ff&center=true&vCenter=true&width=840&lines=PWA+com+cara+de+app+nativo+no+celular+e+no+desktop;Cria%2C+converte%2C+audita%2C+notifica+e+otimiza;Auditor+de+32+regras+com+arquivo+e+linha%2C+sem+rede;Next.js%2C+Vite%2C+React%2C+Supabase+e+Web+Push" alt="PWA com cara de app nativo no celular e no desktop" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=2800&pause=900&color=00d9ff&center=true&vCenter=true&width=840&lines=PWAs+that+feel+native+on+phones+and+desktops;Create%2C+convert%2C+audit%2C+notify+and+optimize;32-rule+auditor+with+file+and+line%2C+no+network;Next.js%2C+Vite%2C+React%2C+Supabase+and+Web+Push" alt="PWAs that feel native on phones and desktops" />
 </div>
 
 <div align="center">
 
-  <p><strong>Do site ao app instalável, com notificação que chega e layout de app nas duas telas.</strong></p>
+  <p><strong>From website to installable app, with notifications that arrive and an app layout on both screens.</strong></p>
 
   <p>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-00d9ff?style=for-the-badge" alt="License: MIT" /></a>
     <a href="https://docs.claude.com/en/docs/claude-code"><img src="https://img.shields.io/badge/Made%20for-Claude%20Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Made for: Claude Code" /></a>
-    <img src="https://img.shields.io/badge/node-18%2B%20sem%20depend%C3%AAncia-1a1a2e?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="node: 18+ sem dependência" />
-    <img src="https://img.shields.io/badge/regras-32-00d9ff?style=for-the-badge" alt="regras: 32" />
+    <img src="https://img.shields.io/badge/node-18%2B%20zero%20dependencies-1a1a2e?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="node: 18+ zero dependencies" />
+    <img src="https://img.shields.io/badge/rules-32-00d9ff?style=for-the-badge" alt="rules: 32" />
   </p>
 
+  <p><a href="README.pt-BR.md">Leia em português</a></p>
+
   <p>
-    <a href="#por-que-existe">Por que existe</a> •
-    <a href="#comandos">Comandos</a> •
-    <a href="#as-sete-camadas">As sete camadas</a> •
+    <a href="#why-it-exists">Why it exists</a> •
+    <a href="#commands">Commands</a> •
+    <a href="#the-seven-layers">The seven layers</a> •
     <a href="#auditor">Auditor</a> •
-    <a href="#instalar">Instalar</a> •
-    <a href="#estrutura">Estrutura</a> •
-    <a href="#testes">Testes</a> •
-    <a href="#licença">Licença</a>
+    <a href="#install">Install</a> •
+    <a href="#structure">Structure</a> •
+    <a href="#tests">Tests</a> •
+    <a href="#license">License</a>
   </p>
 </div>
 
 <br>
 
-> **pwa-nativo** junta num plugin o que fez o precodiesel.com.br virar app: manifesto e ícones certos, service worker que abre sem internet, instalação por plataforma, notificação testada na hora e casca com dock no celular e painel lateral no desktop.
+> **pwa-nativo** packs into one plugin what turned precodiesel.com.br into an app: correct manifest and icons, a service worker that opens offline, per-platform install, notifications tested on the spot, and a shell with a dock on the phone and a side panel on the desktop.
 
-> Sem vínculo com a Anthropic. "Claude" e "Claude Code" são marcas da Anthropic.
+> Not affiliated with or endorsed by Anthropic. "Claude" and "Claude Code" are trademarks of Anthropic.
 
-## O que é
+## What it is
 
 ```yaml
-produto:      plugin do Claude Code: criar, converter, auditar, notificar e otimizar PWA
-camadas:      manifesto · service worker · instalação · notificações · casca nativa · dados · verificação
-auditor:      32 regras, saída TOON, cache por arquivo com sha1, nunca executa código auditado
-modelos:      17 arquivos: sw.js, núcleo do navegador, React, Next, Vite, CSS, Supabase, geradores
-notificações: VAPID sem dependência, teste ao ligar, disparador que só avisa o que mudou
-desktop:      painel lateral a partir de 768 px, screenshots wide, window-controls-overlay
-instalar:     gh repo clone leonardocandiani/pwa-nativo · ./install.sh
-licença:      MIT
+product:       Claude Code plugin: create, convert, audit, notify and optimize PWAs
+layers:        manifest · service worker · install · notifications · native shell · data · verification
+auditor:       32 rules, TOON output, per-file sha1 cache, never executes audited code
+templates:     17 files: sw.js, browser core, React, Next, Vite, CSS, Supabase, generators
+notifications: dependency-free VAPID, test on enable, dispatcher that only notifies what changed
+desktop:       side panel from 768 px, wide screenshots, window-controls-overlay
+install:       gh repo clone leonardocandiani/pwa-nativo · ./install.sh
+license:       MIT
 ```
 
 <!-- /readme-padrao:header -->
 
-Plugin do Claude Code para levar qualquer app web a PWA com cara de app nativo no celular e de app
-de verdade no computador. Ele cria do zero, converte um sistema que já existe, audita, monta
-notificações e otimiza. O método saiu do precodiesel.com.br, onde cada peça roda em produção.
+A Claude Code plugin that takes any web app to a PWA that feels native on the phone and like a real
+app on the computer. It creates from scratch, converts an existing system, audits, sets up
+notifications and optimizes. The method came out of precodiesel.com.br, where every piece runs in
+production.
 
-## Por que existe
+## Why it exists
 
-Transformar site em PWA costuma parar no manifesto: o app instala, mas abre com barra cinza no
-toque, botão que fica aceso depois do dedo, fundo cortado pela barra do navegador, notificação que
-ninguém sabe se chega e, no computador, o layout do celular esticado. O plugin junta o que resolveu
-cada um desses pontos num método só, com código pronto e um auditor que acusa o defeito com arquivo
-e linha.
+Turning a site into a PWA usually stops at the manifest: the app installs, but it opens with a grey
+bar on touch, a button that stays lit after the finger leaves, a background cut off by the browser
+bar, notifications nobody knows reach the device and, on the computer, the phone layout stretched
+wide. The plugin gathers what fixed each of those points into one method, with ready code and an
+auditor that reports the defect with file and line.
 
-## Comandos
+## Commands
 
-| Comando | O que faz |
+| Command | What it does |
 |---|---|
-| `/pwa-nativo:criar <app>` | PWA do zero com as sete camadas, Next.js por padrão ou Vite |
-| `/pwa-nativo:converter [pasta]` | leva um sistema web existente a PWA sem trocar o que funciona |
-| `/pwa-nativo:auditar [pasta]` | roda o auditor, confere no código e no render, lista o que corrigir |
-| `/pwa-nativo:notificacoes <o que avisar>` | VAPID, inscrição por aparelho, teste na hora e disparador que só avisa o que mudou |
-| `/pwa-nativo:otimizar [pasta]` | corrige o que o auditor e o render apontam, com antes e depois |
+| `/pwa-nativo:criar <app>` | PWA from scratch with the seven layers, Next.js by default or Vite |
+| `/pwa-nativo:converter [folder]` | takes an existing web system to PWA without replacing what works |
+| `/pwa-nativo:auditar [folder]` | runs the auditor, checks the code and the render, lists what to fix |
+| `/pwa-nativo:notificacoes <what to notify>` | VAPID, per-device subscription, instant test and a dispatcher that only notifies what changed |
+| `/pwa-nativo:otimizar [folder]` | fixes what the auditor and the render point out, with before and after |
 
-O agente `auditor-pwa` faz a auditoria só leitura e confirma cada achado na linha antes de
-reportar.
+The `auditor-pwa` agent runs the audit read-only and confirms each finding on the line before
+reporting it.
 
-## As sete camadas
+## The seven layers
 
-1. **Manifesto e ícones**: `id` fixo, ícones `any` e `maskable`, `apple-touch-icon`, prints wide e
-   narrow para o convite de instalação, atalhos.
-2. **Service worker**: rede primeiro para página e dado, cache primeiro para arquivo com hash,
-   caches por versão; abre sem internet com o que já foi visto.
-3. **Instalação**: botão próprio onde o navegador deixa (Android, Chrome e Edge no desktop), passos
-   certos onde não deixa (iPhone, Safari no Mac), some quando já instalado.
-4. **Notificações**: liga no toque, manda uma de teste na hora, disparador que calcula em código o
-   que mudou e manda uma notificação por pessoa.
-5. **Casca nativa**: dock embaixo no celular, painel lateral a partir de 768 px, área segura,
-   `dvh`, toque sem atraso e sem flash, hover só onde existe mouse.
-6. **Dados sem deploy**: dado que muda por agenda vai para um bucket com manifest por último, e o
-   app usa o dado do build como reserva.
-7. **Verificação**: auditor em 0, render em 390 e 1280 px, service worker ativo e abertura offline
-   provados em script; o que só o aparelho prova fica dito como pendente.
+1. **Manifest and icons**: fixed `id`, `any` and `maskable` icons, `apple-touch-icon`, wide and
+   narrow screenshots for the install prompt, shortcuts.
+2. **Service worker**: network first for pages and data, cache first for hashed files, versioned
+   caches; opens offline with what was already seen.
+3. **Install**: a custom button where the browser allows it (Android, Chrome and Edge on desktop),
+   the right steps where it does not (iPhone, Safari on Mac), hidden once installed.
+4. **Notifications**: enabled on tap, sends a test right away, and a dispatcher that computes in
+   code what changed and sends one notification per person.
+5. **Native shell**: dock at the bottom on the phone, side panel from 768 px, safe area, `dvh`,
+   taps with no delay and no flash, hover only where a mouse exists.
+6. **Data without deploy**: data that changes on a schedule goes to a bucket with the manifest
+   written last, and the app uses the build-time data as a fallback.
+7. **Verification**: auditor at 0, render at 390 and 1280 px, active service worker and offline
+   open proven by script; what only a real device can prove is stated as pending.
 
 ## Auditor
 
 ```bash
-node scripts/auditar.mjs <pasta>          # TOON, exit 0 limpo, 1 com erro, 2 uso errado
-node scripts/auditar.mjs <pasta> --json
-node scripts/auditar.mjs <pasta> --sem-cache
+node scripts/auditar.mjs <folder>          # TOON, exit 0 clean, 1 with errors, 2 wrong usage
+node scripts/auditar.mjs <folder> --json
+node scripts/auditar.mjs <folder> --sem-cache
 ```
 
-Confere 32 regras sem rede e sem dependência: manifesto (M), service worker (S), notificações
-(P), instalação (I), acabamento nativo (N) e desktop (D). Cada id tem a correção em
-`skills/pwa-nativo/references/regras.md`. A análise de cada arquivo fica em
-`.pwa-nativo/cache.json`, validada por tamanho, data e sha1; só o que mudou é relido. O auditor
-nunca executa código do projeto auditado: o manifesto em JS é convertido para JSON, e o que não for
-literal vira o aviso M00.
+It checks 32 rules with no network and no dependencies: manifest (M), service worker (S),
+notifications (P), install (I), native polish (N) and desktop (D). Each id has its fix in
+`skills/pwa-nativo/references/regras.md`. The analysis of each file is kept in
+`.pwa-nativo/cache.json`, validated by size, date and sha1; only what changed is read again. The
+auditor never executes code from the audited project: a JS manifest is converted to JSON, and
+anything that is not a literal becomes the M00 warning.
 
-## Instalar
+## Install
 
 ```bash
 gh repo clone leonardocandiani/pwa-nativo ~/projetos/pwa-nativo
 ~/projetos/pwa-nativo/install.sh
 ```
 
-O `install.sh` roda a suíte, valida o plugin, registra o marketplace local e instala
-`pwa-nativo@pwa-nativo`. Nas sessões já abertas, rode `/reload-plugins`. Precisa de Node.js 18+ e
-do Claude Code.
+`install.sh` runs the suite, validates the plugin, registers the local marketplace and installs
+`pwa-nativo@pwa-nativo`. In sessions that are already open, run `/reload-plugins`. It needs
+Node.js 18+ and Claude Code.
 
-## Estrutura
+## Structure
 
 ```
-.claude-plugin/        plugin.json e marketplace.json
+.claude-plugin/        plugin.json and marketplace.json
 commands/              criar, converter, auditar, notificacoes, otimizar
-agents/auditor-pwa.md  auditoria só leitura
-skills/pwa-nativo/     método e uma referência por camada
-scripts/               regras.mjs e auditar.mjs
-templates/             service worker, núcleo do navegador, React, Next, Vite, CSS, Supabase, geradores
-testes/                node --test testes/*.test.mjs, com exemplos bom e ruim
+agents/auditor-pwa.md  read-only audit
+skills/pwa-nativo/     the method and one reference per layer
+scripts/               regras.mjs and auditar.mjs
+templates/             service worker, browser core, React, Next, Vite, CSS, Supabase, generators
+testes/                node --test testes/*.test.mjs, with good and bad examples
 ```
 
-## Testes
+## Tests
 
 ```bash
 node --test testes/*.test.mjs
 ```
 
-Onze testes: o exemplo bom sai limpo, o ruim acusa cada defeito plantado com arquivo e linha, o
-cache acerta e invalida (edição, só a data, arquivo apagado, versão), o ícone apagado é visto mesmo
-com cache, e o manifesto malicioso não é executado.
+Eleven tests: the good example comes out clean, the bad one reports every planted defect with file
+and line, the cache hits and invalidates (edit, date only, deleted file, version), a deleted icon
+is still seen despite the cache, and the malicious manifest is not executed.
 
-## Licença
+## License
 
-MIT. Veja `LICENSE`.
+MIT. See `LICENSE`.
 
 <!-- readme-padrao:footer -->
 <br>
@@ -153,10 +156,10 @@ MIT. Veja `LICENSE`.
 ---
 
 <div align="center">
-  <p><strong>Feito por <a href="https://github.com/leonardocandiani">Leonardo Candiani</a></strong> · Mais projetos em <a href="https://github.com/leonardocandiani?tab=repositories">github.com/leonardocandiani</a></p>
-  <p>Leonardo Candiani constrói agentes de IA que conversam, decidem e fecham negócio. Cofundador da SixQuasar, operando Proteauto, SegSmart e IACall ponta a ponta.</p>
+  <p><strong>Built by <a href="https://github.com/leonardocandiani">Leonardo Candiani</a></strong> · More projects at <a href="https://github.com/leonardocandiani?tab=repositories">github.com/leonardocandiani</a></p>
+  <p>Leonardo Candiani builds AI agents that talk, decide and close deals. Cofounder of SixQuasar, operating Proteauto, SegSmart and IACall end to end.</p>
   <a href="https://leonardocandiani.com.br">
-    <img src="https://img.shields.io/badge/-Site-0d1117?style=for-the-badge&logo=safari&logoColor=00d9ff" alt="Site" />
+    <img src="https://img.shields.io/badge/-Website-0d1117?style=for-the-badge&logo=safari&logoColor=00d9ff" alt="Website" />
   </a>
   <a href="https://github.com/leonardocandiani">
     <img src="https://img.shields.io/badge/-GitHub-0d1117?style=for-the-badge&logo=github&logoColor=00d9ff" alt="GitHub" />
@@ -172,6 +175,6 @@ MIT. Veja `LICENSE`.
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d9ff,50:1a1a2e,100:0d1117&height=120&section=footer&text=Obrigado%20pela%20visita%21&fontSize=18&fontColor=ffffff&fontAlignY=72" alt="Obrigado pela visita!" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d9ff,50:1a1a2e,100:0d1117&height=120&section=footer&text=Thanks%20for%20stopping%20by&fontSize=18&fontColor=ffffff&fontAlignY=72" alt="Thanks for stopping by" width="100%" />
 </div>
 <!-- /readme-padrao:footer -->
